@@ -34,7 +34,13 @@ export default function Navbar() {
 
         {/* Actions */}
         <div className="flex items-center gap-3">
-
+          {/* #Ammar: Contact Me Link */}
+          <Link
+            to="/contact"
+            className="px-4 py-2 rounded-xl text-white/90 hover:text-white transition"
+          >
+            Contact Me
+          </Link>
           {!user && (
             <>
               <Link

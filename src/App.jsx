@@ -8,7 +8,7 @@ import ProtectedRoute from "./components/ProtectedRoute.jsx";
 import SubjectOverview from "./pages/SubjectOverview.jsx";
 import CategoryFiles from "./pages/CategoryFiles.jsx";
 import DepartmentSubjects from "./pages/DepartmentSubjects.jsx";
-
+import ContactMe from "./pages/ContactMe.jsx"; // #Ammar: Import ContactMe component
 
 
 function App() {
@@ -54,6 +54,7 @@ function App() {
         />
 
           <Route path="/login" element={<Login />} />
+          <Route path="/contact" element={<ContactMe />} /> {/* #Ammar: Contact Me Route */}
           <Route path="/register" element={<Register />} />
         </Routes>
       </BrowserRouter>
